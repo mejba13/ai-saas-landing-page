@@ -1,0 +1,32 @@
+{
+  "project_root": "/Volumes/Software Engineer/AI Engineer/Auto Claude/ai-saas-landing-page",
+  "project_type": "single",
+  "services": {
+    "frontend": {
+      "path": ".",
+      "tech_stack": ["react", "typescript", "vite", "tailwindcss", "framer-motion"],
+      "port": 5173,
+      "dev_command": "npm run dev",
+      "build_command": "npm run build",
+      "test_command": "npm test",
+      "entry_point": "src/main.tsx"
+    }
+  },
+  "infrastructure": {
+    "docker": false,
+    "database": null,
+    "ci_cd": false
+  },
+  "conventions": {
+    "linter": "eslint",
+    "formatter": "prettier",
+    "testing": "vitest",
+    "component_pattern": "functional_components",
+    "styling": "tailwindcss",
+    "file_naming": "PascalCase_for_components"
+  },
+  "dependencies": {
+    "production": ["react", "react-dom", "framer-motion", "lucide-react"],
+    "development": ["typescript", "vite", "tailwindcss", "postcss", "autoprefixer", "@types/react", "@types/react-dom"]
+  }
+}

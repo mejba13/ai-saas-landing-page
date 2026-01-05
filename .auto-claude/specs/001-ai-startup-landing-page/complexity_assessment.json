@@ -1,0 +1,86 @@
+{
+  "complexity": "standard",
+  "workflow_type": "feature",
+  "confidence": 0.85,
+  "reasoning": "Building a complete AI SaaS landing page from scratch (greenfield). While it involves 10+ files across multiple components (navigation, hero, features, footer), it's a single frontend service with no external integrations, no database, and uses well-established frontend patterns (React/Next.js, Tailwind, animation libraries). The technology stack is familiar and well-documented.",
+
+  "analysis": {
+    "scope": {
+      "estimated_files": 15,
+      "estimated_services": 1,
+      "is_cross_cutting": false,
+      "notes": "Frontend-only landing page with multiple components: Navigation, Hero section with animations, Client logos, Feature sections, Footer. Greenfield project requiring initial setup."
+    },
+    "integrations": {
+      "external_services": [],
+      "new_dependencies": ["react", "next.js", "tailwindcss", "framer-motion"],
+      "research_needed": false,
+      "notes": "All dependencies are standard frontend libraries with excellent documentation. No external API integrations required - this is a static marketing landing page."
+    },
+    "infrastructure": {
+      "docker_changes": false,
+      "database_changes": false,
+      "config_changes": true,
+      "notes": "Basic frontend project configuration needed (package.json, tailwind.config.js, next.config.js). No backend infrastructure, databases, or containerization required."
+    },
+    "knowledge": {
+      "patterns_exist": false,
+      "research_required": false,
+      "unfamiliar_tech": [],
+      "notes": "Greenfield project so no existing patterns, but React/Next.js landing pages follow extremely well-established patterns. The design reference provides clear guidance for implementation. Standard animation and styling patterns apply."
+    },
+    "risk": {
+      "level": "low",
+      "concerns": ["Accurate replication of design from screenshot", "Responsive design across all breakpoints", "Animation performance optimization"],
+      "notes": "Low risk as this is a static frontend with no user data handling, authentication, or external service dependencies. Main risk is visual fidelity to the reference design."
+    }
+  },
+
+  "recommended_phases": [
+    "discovery",
+    "requirements",
+    "context",
+    "spec_writing",
+    "planning",
+    "validation"
+  ],
+
+  "flags": {
+    "needs_research": false,
+    "needs_self_critique": false,
+    "needs_infrastructure_setup": false
+  },
+
+  "design_reference": {
+    "screenshot_analyzed": true,
+    "key_elements_identified": [
+      "Navigation bar with logo, menu items, and CTA button",
+      "Hero section with large typography headline",
+      "Dual CTA buttons (filled and outlined styles)",
+      "Hero image with floating UI card elements",
+      "Client/partner logo strip",
+      "Color scheme: white background, black text, lime-green accents",
+      "Modern sans-serif typography with clear hierarchy",
+      "Rounded corners and soft shadows on UI elements"
+    ],
+    "color_palette": {
+      "primary_background": "#FFFFFF",
+      "primary_text": "#000000",
+      "accent": "#C4FF00 (lime-green)",
+      "secondary_accent": "#8B5CF6 (purple gradient hints)",
+      "gradient": "lime-green to purple gradient on hero image elements"
+    }
+  },
+
+  "validation_recommendations": {
+    "risk_level": "low",
+    "skip_validation": false,
+    "minimal_mode": true,
+    "test_types_required": ["unit"],
+    "security_scan_required": false,
+    "staging_deployment_required": false,
+    "reasoning": "Static frontend landing page with no user data handling, authentication, or API integrations. Minimal validation mode with unit tests for key components is sufficient. Visual testing/review should be prioritized over automated testing for this design-focused task."
+  },
+
+  "created_at": "2026-01-06T00:00:00.000Z"
+}

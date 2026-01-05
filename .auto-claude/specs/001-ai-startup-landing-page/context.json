@@ -1,0 +1,67 @@
+{
+  "task_description": "Build a modern, professional landing page for an AI SaaS startup (Twinkle.ai - AI Web orchestration platform) replicating the design from the reference screenshot.",
+  "scoped_services": ["frontend"],
+  "files_to_modify": [],
+  "files_to_create": {
+    "frontend": [
+      "package.json",
+      "vite.config.ts",
+      "tailwind.config.js",
+      "postcss.config.js",
+      "tsconfig.json",
+      "tsconfig.node.json",
+      "index.html",
+      "src/main.tsx",
+      "src/App.tsx",
+      "src/index.css",
+      "src/components/Header.tsx",
+      "src/components/Hero.tsx",
+      "src/components/ProductShowcase.tsx",
+      "src/components/LogoBar.tsx",
+      "src/components/Button.tsx",
+      "src/components/FloatingCard.tsx",
+      "src/components/MobileMenu.tsx"
+    ]
+  },
+  "files_to_reference": [],
+  "patterns": {
+    "component_pattern": "React functional components with TypeScript interfaces for props",
+    "styling_pattern": "Tailwind CSS utility classes, custom colors in tailwind.config.js",
+    "animation_pattern": "Framer Motion for complex animations, CSS transitions for simple hover states",
+    "responsive_pattern": "Mobile-first approach using Tailwind breakpoints (sm, md, lg, xl)"
+  },
+  "existing_implementations": {
+    "description": "Greenfield project - no existing implementations",
+    "relevant_files": []
+  },
+  "design_specifications": {
+    "color_palette": {
+      "primary_black": "#000000",
+      "pure_white": "#FFFFFF",
+      "off_white": "#FAFAFA",
+      "light_gray": "#E5E7EB",
+      "medium_gray": "#6B7280",
+      "gradient_yellow": "#E5F52A",
+      "gradient_green": "#7FE67C",
+      "gradient_purple": "#9B87F5",
+      "success_green": "#22C55E",
+      "notification_red": "#EF4444"
+    },
+    "typography": {
+      "font_family": "Inter, system-ui, sans-serif",
+      "h1_desktop": "72px",
+      "h1_mobile": "40px",
+      "nav_links": "14px",
+      "button_text": "16px"
+    },
+    "layout": {
+      "max_width": "1280px",
+      "container_padding_mobile": "24px",
+      "container_padding_desktop": "32px",
+      "header_height": "72px",
+      "button_radius": "9999px",
+      "card_radius": "12px"
+    }
+  },
+  "created_at": "2026-01-06T02:00:00.000Z"
+}
